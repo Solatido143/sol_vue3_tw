@@ -1,6 +1,7 @@
 <template>
+  <Header :title="title || 'Welcome to My Portfolio'" />
+
   <div class="p-6 bg-gray-100 min-h-screen">
-    <Header :title="title || 'Welcome to My Portfolio'" />
 
     <p class="text-lg mb-4">{{ description }}</p>
 
@@ -11,14 +12,10 @@
         class="border border-gray-300 rounded p-2 mb-4 w-full"
     />
 
-    <button
-        @click="resetTitle"
-        class="bg-blue-500 text-white py-2 px-4 rounded mb-6 hover:bg-blue-700"
-    >
+    <button @click="resetTitle" class="bg-blue-500 text-white py-2 px-4 rounded mb-6 hover:bg-blue-700">
       Reset Title
     </button>
 
-    <!-- Project list styled with Tailwind -->
     <ul class="space-y-4">
       <li
           v-for="project in projects"

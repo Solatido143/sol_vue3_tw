@@ -11,13 +11,13 @@ import Navbar from './Navbar.vue' ;
 <template>
   <header>
     <h1>{{ title }}</h1>
-  </header>
+    <Navbar/>
+  </header> 
 </template>
 
 <style scoped>
   header {
     background-color: blue;
-    padding: 20px;
     text-align: center;
   }
 </style>
