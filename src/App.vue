@@ -1,5 +1,6 @@
 <template>
   <Header/>
+<!--  <Header :title="title || 'Welcome to My Portfolio'" />-->
 
   <div class="p-6 bg-gray-200 min-h-screen">
 <!--    <p class="text-lg mb-4">{{ description }}</p>-->
