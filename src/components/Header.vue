@@ -3,6 +3,12 @@ import Navbar from './Navbar.vue' ;
   export default {
     components: {
       Navbar
+    },
+    data() {
+      return {
+        phone_num: '+63 921 240 7455',
+        email: 'solcruzmarkanthony@gmail.com',
+      }
     }
   }
 </script>
@@ -12,8 +18,8 @@ import Navbar from './Navbar.vue' ;
     <div class="container mx-auto bg-dark px-5 hidden lg:block">
       <div class="flex justify-between">
         <div class="flex items-center space-x-4">
-          <small><i class="fa fa-phone-alt mr-2"></i>+63 921 240 7455</small>
-          <small><i class="fa fa-envelope-open mr-2"></i>solcruzmarkanthony@gmail.com</small>
+          <p><i class="fa fa-phone-alt mr-2"></i>{{ phone_num }}</p>
+          <p><i class="fa fa-envelope-open mr-2"></i>{{ email }}</p>
         </div>
         <div class="flex items-center space-x-2">
           <a class="p-2 bg-white rounded-full" href="#"><i class="fab fa-twitter"></i></a>
