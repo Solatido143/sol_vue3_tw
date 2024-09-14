@@ -6,6 +6,7 @@ import Navbar from './Navbar.vue' ;
     },
     data() {
       return {
+        title : 'M.A.S.C',
         phone_num: '+63 921 240 7455',
         email: 'solcruzmarkanthony@gmail.com',
         links: [
@@ -40,7 +41,7 @@ import Navbar from './Navbar.vue' ;
       </div>
     </div>
 
-    <Navbar/>
+    <Navbar :title="title"/>
   </header>
 </template>
 
