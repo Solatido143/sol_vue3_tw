@@ -20,8 +20,8 @@ import Navbar from './Navbar.vue' ;
 </script>
 
 <template>
-  <header>
-    <div class="container mx-auto bg-dark px-5 hidden md:block mt-2">
+  <header class="bg-white">
+    <div class="container mx-auto bg-dark px-5 hidden md:block">
       <div class="flex justify-between">
         <div class="flex items-center space-x-4">
           <p><i class="fa fa-phone-alt mr-2"></i>{{ phone_num }}</p>
@@ -46,6 +46,15 @@ import Navbar from './Navbar.vue' ;
 </template>
 
 <style scoped>
+  header {
+    position: relative;
+    z-index: 20;
+  }
+  @media (min-width: 768px) {
+    header {
+      padding-top: 0.50rem;
+    }
+  }
   header a {
     width: 30px;
     height: 30px;
@@ -56,5 +65,8 @@ import Navbar from './Navbar.vue' ;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+  }
+  i {
+    user-select: none ;
   }
 </style>
