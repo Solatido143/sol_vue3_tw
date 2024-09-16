@@ -10,7 +10,7 @@
           <div class="mt-5 title-intro">
             <h1 class="text-4xl font-bold text-black name inline-block">Mark Anthony Sol Cruz</h1>
             <p class="text-gray-600">
-              Software Developer
+              Software Developer Mamaw
             </p>
 <!--            <button class="bg-white text-black border-2 inline-flex items-center mt-4 px-6 py-2 rounded-md hover:bg-gray-100">-->
 <!--              <span class="mr-1">Learn More</span>-->
