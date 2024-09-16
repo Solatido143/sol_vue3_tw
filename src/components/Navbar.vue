@@ -9,7 +9,7 @@
   <nav class="border-gray-200 dark:bg-gray-900 border-b border-gray-200 dark:border-gray-600">
     <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
 
-      <div class="logo-title title font-medium text-blue-700" id="logo-title">
+      <div class="logo-title title font-bold text-2xl bg-blue-500 px-3 rounded-full text-white" id="logo-title">
         {{ title }}
       </div>
 
