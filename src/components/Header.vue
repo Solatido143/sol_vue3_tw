@@ -21,7 +21,7 @@ import Navbar from './Navbar.vue' ;
 
 <template>
   <header class="bg-white">
-    <div class="container mx-auto bg-dark px-5 hidden md:block">
+    <div class="mx-auto bg-dark px-5 hidden md:block">
       <div class="flex justify-between">
         <div class="flex items-center space-x-4">
           <p><i class="fa fa-phone-alt mr-2"></i>{{ phone_num }}</p>
