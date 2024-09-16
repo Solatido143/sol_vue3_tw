@@ -21,23 +21,23 @@
         <div class="p-5 lg:w-5/12 sm:w-6/12">
           <div class="grid gap-4">
             <div>
-              <img class="h-auto max-w-full rounded-lg" src="" alt="">
+              <img class="h-auto max-w-full rounded-lg" src="../img/Ka-bario-ss.jpg" alt="">
             </div>
             <div class="grid grid-cols-5 gap-4">
               <div>
-                <img class="h-auto max-w-full rounded-lg" src="" alt="">
+                <img class="h-auto max-w-full rounded-lg" src="../img/Ka-bario-ss.jpg" alt="">
               </div>
               <div>
-                <img class="h-auto max-w-full rounded-lg" src="" alt="">
+                <img class="h-auto max-w-full rounded-lg" src="../img/Ka-bario-ss.jpg" alt="">
               </div>
               <div>
-                <img class="h-auto max-w-full rounded-lg" src="" alt="">
+                <img class="h-auto max-w-full rounded-lg" src="../img/Ka-bario-ss.jpg" alt="">
               </div>
               <div>
-                <img class="h-auto max-w-full rounded-lg" src="" alt="">
+                <img class="h-auto max-w-full rounded-lg" src="../img/Ka-bario-ss.jpg" alt="">
               </div>
               <div>
-                <img class="h-auto max-w-full rounded-lg" src="" alt="">
+                <img class="h-auto max-w-full rounded-lg" src="../img/Ka-bario-ss.jpg" alt="">
               </div>
             </div>
           </div>
