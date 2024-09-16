@@ -21,23 +21,23 @@
         <div class="p-5 lg:w-5/12 sm:w-6/12">
           <div class="grid gap-4">
             <div>
-              <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/featured/image.jpg" alt="">
+              <img class="h-auto max-w-full rounded-lg" src="" alt="">
             </div>
             <div class="grid grid-cols-5 gap-4">
               <div>
-                <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-1.jpg" alt="">
+                <img class="h-auto max-w-full rounded-lg" src="" alt="">
               </div>
               <div>
-                <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-2.jpg" alt="">
+                <img class="h-auto max-w-full rounded-lg" src="" alt="">
               </div>
               <div>
-                <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-3.jpg" alt="">
+                <img class="h-auto max-w-full rounded-lg" src="" alt="">
               </div>
               <div>
-                <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-4.jpg" alt="">
+                <img class="h-auto max-w-full rounded-lg" src="" alt="">
               </div>
               <div>
-                <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-5.jpg" alt="">
+                <img class="h-auto max-w-full rounded-lg" src="" alt="">
               </div>
             </div>
           </div>
@@ -46,6 +46,7 @@
       </div>
 
     </div>
+
     <div class="bg-gray-100">
       <div class="p-5">
         <div class="flex justify-center items-center">
