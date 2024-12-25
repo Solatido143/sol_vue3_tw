@@ -1,7 +1,7 @@
 <script></script>
 
 <template>
-	<footer class="bg-gray-900 py-6 sm:py-8">
+	<footer class="bg-gray-900 py-2 sm:py-8">
 		<div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
 			<div class="flex flex-col items-center justify-between sm:flex-row">
 				<p class="text-sm text-gray-400">&copy; 2024 Mark Anthony N. Sol Cruz. All rights reserved.</p>

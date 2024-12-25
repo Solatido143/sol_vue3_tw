@@ -2,10 +2,10 @@
 
 <template>
 	<section class="bg-white py-10 sm:py-16 lg:py-20">
-		<div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
-			<div class="flex flex-col-reverse sm:flex-row items-center justify-between">
+		<div class="px-6 sm:px-8 lg:px-10">
+			<div class="">
 				<!-- Left side: Contact Form -->
-				<div class="sm:w-1/2">
+				<div class="">
 					<div class="text-center sm:text-left">
 						<h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">Contact Me</h2>
 						<p class="mt-4 text-lg text-gray-600">Have a question or want to collaborate? Get in touch!</p>
@@ -47,11 +47,10 @@
 						</button>
 					</form>
 				</div>
-
-				<!-- Right side: Picture of you -->
-				<div class="sm:w-1/2 mb-8 sm:mb-0 hidden sm:flex justify-center">
+				<!-- Left side: Picture -->
+				<!-- <div class="sm:w-1/2 mb-8 sm:mb-0 hidden sm:flex justify-center">
 					<img src="../img/SOL CRUZ MARK ANTHONY1049.jpg" alt="Your Picture" class=" w-72 h-72 object-contain" />
-				</div>
+				</div> -->
 			</div>
 		</div>
 	</section>
