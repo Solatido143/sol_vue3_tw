@@ -18,7 +18,7 @@ export default {
 						<p class="mt-4 text-gray-600 leading-relaxed">
 							Hello! I'm <strong>Mark Anthony N. Sol Cruz</strong>, a passionate software developer specializing in web
 							development. I enjoy creating elegant, user-friendly applications using modern technologies like
-							<span class="font-medium text-indigo-600">Laravel, Vue.js, and Tailwind CSS</span>.
+							<span class="font-medium text-indigo-600">Yii 2, Laravel, Vue.js, and Tailwind CSS</span>.
 						</p>
 						<p class="mt-4 text-gray-600 leading-relaxed">
 							I graduated with a <strong>Bachelor of Science in Information Technology</strong> from Bulacan State
