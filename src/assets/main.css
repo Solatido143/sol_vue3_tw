@@ -2,10 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+    --primary-color: #1B263B; /* Midnight Blue */
+    --secondary-color: #FF6B6B; /* Coral */
+    --accent-color: #FFD166; /* Goldenrod */
+    --neutral-light: #F7F9FB; /* Ghost White */
+    --neutral-dark: #333745; /* Charcoal */
+}
+
 body {
-    color: #777777;
-    font-family: "Poppins", sans-serif;
-    font-size: 14px;
+    color: #F7F9FB;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
     font-weight: 300;
     line-height: 1.5em;
     -webkit-font-smoothing: antialiased;
