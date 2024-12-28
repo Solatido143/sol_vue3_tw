@@ -1,7 +1,11 @@
-<script></script>
+<script>
+export default {
+	name: "Contact",
+};
+</script>
 
 <template>
-	<section class="bg-white py-10 sm:py-16 lg:py-20">
+	<section id="contact" class="bg-white py-10 sm:py-16 lg:py-20">
 		<div class="max-w-screen-md mx-auto px-4 sm:px-6 lg:px-8">
 			<div class="text-center">
 				<h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">Contact Me</h2>

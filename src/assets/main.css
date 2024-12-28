@@ -9,23 +9,14 @@
 	--neutral-light: #e5e5e5; /* Cream White */
 	--neutral-dark: #27272a; /* Charcoal Gray */
 }
+/* 
+Primary Color - Ocean Blue: #005F73 Use for headers, navigation bars, and main buttons.
 
-[data-theme="dark"] {
-	--primary-color: #0a9396; /* Aqua Green */
-	--secondary-color: #94d2bd; /* Light Teal */
-	--accent-color: #ee9b00; /* Deep Mustard */
-	--neutral-light: #27272a; /* Charcoal Gray */
-	--neutral-dark: #e5e5e5; /* Cream White */
-}
+Secondary Color - Aqua Green: #0A9396 Use for highlights, secondary buttons, or hover effects.
 
-body {
-	background-color: var(--neutral-light);
-	color: var(--neutral-dark);
-    background-color: white;
-    color: black;
-	font-family: "Open Sans", sans-serif;
-	font-size: 16px;
-	font-weight: 300;
-	line-height: 1.5em;
-	-webkit-font-smoothing: antialiased;
-}
+Accent Color - Golden Sand: #E9D8A6 Use for subtle accents, icons, or section dividers.
+
+Neutral Light - Cream White: #E5E5E5 Use as the background color for light sections.
+
+Neutral Dark - Charcoal Gray: #27272A Use for text, footers, or darker sections. 
+*/

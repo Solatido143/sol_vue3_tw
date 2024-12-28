@@ -31,13 +31,14 @@
 					" />
 			</div>
 
-			<div class="mx-auto max-w-2xl py-32 sm:py-48 lg:pb-56 lg:pt-32">
+			<div class="mx-auto max-w-2xl py-32 sm:py-48">
 				<div class="hidden sm:mb-8 sm:flex sm:justify-center">
 					<div
 						class="relative rounded-full px-3 py-1 text-sm/6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
 						Welcome to my portfolio.
 						<a href="#" class="font-semibold text-indigo-600"
-							><span class="absolute inset-0" aria-hidden="true" />View my work <span aria-hidden="true">&rarr;</span></a
+							><span class="absolute inset-0" aria-hidden="true" />View my work
+							<span aria-hidden="true">&rarr;</span></a
 						>
 					</div>
 				</div>
@@ -46,7 +47,8 @@
 						Mark Anthony N. Sol Cruz
 					</h1>
 					<p class="mt-8 text-pretty text-lg font-medium text-gray-500 sm:text-xl/8">
-						I am a passionate web developer with experience in building dynamic websites and applications. My goal is to create beautiful and functional user experiences that make a real impact.
+						I’m a web developer who loves creating dynamic websites and applications. My focus is on building beautiful,
+						user-friendly experiences that make a difference.
 					</p>
 					<div class="mt-10 flex items-center justify-center gap-x-6">
 						<a
@@ -54,15 +56,11 @@
 							class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
 							>Contact me</a
 						>
-						<a href="#" class="text-sm/6 font-semibold text-gray-900">Learn more about me <span aria-hidden="true">→</span></a>
+						<a href="#" class="text-sm/6 font-semibold text-gray-900"
+							>Learn more about me <span aria-hidden="true">→</span></a
+						>
 					</div>
 				</div>
-			</div>
-
-			<div class="absolute inset-y-0 right-0 -z-10 transform-gpu overflow-hidden blur-lg sm:right-0" aria-hidden="true">
-				<div
-					class="relative right-[-4rem] aspect-[900/500] w-[30rem] rotate-[10deg] bg-gradient-to-tl from-[#34D399] via-[#3B82F6] to-[#9333EA] opacity-50 sm:right-[-20rem] sm:w-[50rem]"
-					style="clip-path: polygon(70% 0%, 95% 35%, 85% 90%, 60% 65%, 35% 75%, 15% 45%, 5% 20%, 25% 5%)"></div>
 			</div>
 
 			<div
