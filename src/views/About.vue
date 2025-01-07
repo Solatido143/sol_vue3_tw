@@ -10,7 +10,7 @@ export default {
 			<div class="bg-white rounded-lg shadow-lg p-8">
 				<div class="flex flex-col md:flex-row items-center">
 					<img
-						src="../img/122012981_4568984963173858_8929806695914832770_n.jpg"
+						src="../img/SOL CRUZ MARK ANTHONY1027.jpg"
 						alt="Profile Picture"
 						class="w-32 h-32 rounded-full md:mx-0 md:mr-8" />
 					<div>
@@ -18,15 +18,15 @@ export default {
 						<p class="mt-4 text-gray-600 leading-relaxed">
 							Hello! I'm <strong>Mark Anthony N. Sol Cruz</strong>, a passionate software developer specializing in web
 							development. I enjoy creating elegant, user-friendly applications using modern technologies like
-							<span class="font-medium text-indigo-600">Yii 2, Laravel, Vue.js, and Tailwind CSS</span>.
+							<span class="font-medium text-secondary">Yii 2, Laravel, Vue.js, and Tailwind CSS</span>.
 						</p>
 						<p class="mt-4 text-gray-600 leading-relaxed">
 							I graduated with a <strong>Bachelor of Science in Information Technology</strong> from Bulacan State
-							University, where I was a <strong class="text-indigo-600">Dean's Lister</strong> for the academic years
+							University, where I was a <strong class="text-secondary">Dean's Lister</strong> for the academic years
 							2022-2023 and 2023-2024. My dedication to learning and problem-solving has always been my greatest
 							strength.
 						</p>
-						<a href="#" class="inline-flex items-center mt-6 text-indigo-600 hover:underline font-semibold">
+						<a href="#" class="inline-flex items-center mt-6 text-secondary hover:underline font-semibold">
 							View my resume
 							<svg
 								class="ml-2 w-4 h-4"

@@ -8,7 +8,7 @@ export default {
 	<section id="projects" class="bg-white py-10 sm:py-16 lg:py-20">
 		<div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
 			<div class="text-center">
-				<h2 class="text-3xl font-bold text-gray-900 sm:text-4xl">Projects</h2>
+				<h2 class="text-3xl font-bold text-neutralDark sm:text-4xl">Projects</h2>
 				<p class="mt-4 text-lg text-gray-600">
 					Discover some of the work I've been involved in. More details will be added soon!
 				</p>
