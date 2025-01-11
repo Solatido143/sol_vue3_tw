@@ -1,4 +1,8 @@
 /** @type {import('tailwindcss').Config} */
+
+import twforms from "@tailwindcss/forms";
+import flowbite from "flowbite/plugin";
+
 export default {
 	content: ["./index.html", "./src/**/*.{vue,js,ts,jsx,tsx}", "./node_modules/flowbite/**/*.js"],
 	theme: {
@@ -19,5 +23,5 @@ export default {
 			},
 		},
 	},
-	plugins: [require("@tailwindcss/forms"), require("flowbite/plugin")],
+	plugins: [twforms, flowbite],
 };
