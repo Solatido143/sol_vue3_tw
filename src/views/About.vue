@@ -16,7 +16,7 @@ export default {
 					<div>
 						<h2 class="text-2xl font-bold text-gray-800">About Me</h2>
 						<p class="mt-4 text-gray-600 leading-relaxed">
-							Hello! I'm <strong>Mark Anthony Sol Cruz</strong>, a passionate software developer specializing in web
+							Hello! I'm <strong>Mark Anthony N. Sol Cruz</strong>, a passionate software developer specializing in web
 							development. I enjoy creating elegant, user-friendly applications using modern technologies like
 							<span class="font-medium text-secondary">Yii 2, Laravel, Vue.js, and Tailwind CSS</span>.
 						</p>

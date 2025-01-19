@@ -44,7 +44,7 @@
 				</div>
 				<div class="text-center">
 					<h1 class="text-balance text-5xl font-semibold tracking-tight text-neutralDark sm:text-7xl">
-						Mark Anthony Sol Cruz
+						Mark Anthony N. Sol Cruz
 					</h1>
 					<p class="mt-8 text-pretty text-lg font-medium text-gray-500 sm:text-xl/8">
 						I’m a web developer who loves creating dynamic websites and applications. My focus is on building beautiful,
