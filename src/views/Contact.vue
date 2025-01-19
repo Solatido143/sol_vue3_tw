@@ -1,6 +1,44 @@
 <script>
+import {ref, set, push} from "firebase/database";
+import {database} from "@/firebase"; // Correct import path
+
 export default {
 	name: "Contact",
+	data() {
+		return {
+			name: "",
+			email: "",
+			message: "",
+		};
+	},
+	methods: {
+		async submitForm(event) {
+			event.preventDefault();
+
+			try {
+				// Get a reference to the "messages" node
+				const messagesRef = ref(database, "messages");
+				const newMessageRef = push(messagesRef);
+
+				// Save the form data to Firebase
+				await set(newMessageRef, {
+					name: this.name,
+					email: this.email,
+					message: this.message,
+					timestamp: new Date().toISOString(),
+				});
+
+				alert("Thank you for contacting me! Your message has been sent.");
+				// Reset the form fields
+				this.name = "";
+				this.email = "";
+				this.message = "";
+			} catch (error) {
+				console.error("Error submitting the form:", error);
+				alert("An error occurred while sending your message. Please try again later.");
+			}
+		},
+	},
 };
 </script>
 
@@ -14,14 +52,14 @@ export default {
 			<div class="mt-8 grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
 				<!-- Contact Form -->
 				<div>
-					<form class="space-y-6">
+					<form @submit="submitForm" class="space-y-6">
 						<div class="grid grid-cols-1 gap-6 sm:grid-cols-2">
 							<div>
 								<label for="name" class="block text-sm font-medium text-gray-700">Name</label>
 								<input
 									type="text"
 									id="name"
-									name="name"
+									v-model="name"
 									required
 									class="mt-1 block w-full rounded-lg border-secondary shadow-sm focus:ring-primary focus:border-primary sm:text-sm" />
 							</div>
@@ -30,7 +68,7 @@ export default {
 								<input
 									type="email"
 									id="email"
-									name="email"
+									v-model="email"
 									required
 									class="mt-1 block w-full rounded-lg border-secondary shadow-sm focus:ring-primary focus:border-primary sm:text-sm" />
 							</div>
@@ -39,7 +77,7 @@ export default {
 							<label for="message" class="block text-sm font-medium text-gray-700">Message</label>
 							<textarea
 								id="message"
-								name="message"
+								v-model="message"
 								rows="4"
 								required
 								class="mt-1 block w-full rounded-lg border-secondary shadow-sm focus:ring-primary focus:border-primary sm:text-sm"></textarea>
