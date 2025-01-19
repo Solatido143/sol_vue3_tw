@@ -1,6 +1,47 @@
 <script>
 export default {
 	name: "Contact",
+	data() {
+		return {
+			formData: {
+				name: "",
+				email: "",
+				message: "",
+			},
+			successMessage: "",
+			errorMessage: "",
+		};
+	},
+	methods: {
+		async handleSubmit(event) {
+			event.preventDefault();
+
+			// Basic form validation
+			if (!this.formData.name || !this.formData.email || !this.formData.message) {
+				this.errorMessage = "All fields are required.";
+				return;
+			}
+
+			try {
+				// Replace this with your actual API or backend logic
+				console.log("Form Data Submitted:", this.formData);
+
+				// Simulate successful submission
+				this.successMessage = "Thank you for your message! I'll get back to you soon.";
+				this.errorMessage = "";
+				this.resetForm();
+			} catch (error) {
+				console.error("Error submitting the form:", error);
+				this.successMessage = "";
+				this.errorMessage = "Something went wrong. Please try again later.";
+			}
+		},
+		resetForm() {
+			this.formData.name = "";
+			this.formData.email = "";
+			this.formData.message = "";
+		},
+	},
 };
 </script>
 
@@ -14,11 +55,12 @@ export default {
 			<div class="mt-8 grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
 				<!-- Contact Form -->
 				<div>
-					<form class="space-y-6">
+					<form @submit="handleSubmit" class="space-y-6">
 						<div class="grid grid-cols-1 gap-6 sm:grid-cols-2">
 							<div>
 								<label for="name" class="block text-sm font-medium text-gray-700">Name</label>
 								<input
+									v-model="formData.name"
 									type="text"
 									id="name"
 									name="name"
@@ -28,6 +70,7 @@ export default {
 							<div>
 								<label for="email" class="block text-sm font-medium text-gray-700">Email</label>
 								<input
+									v-model="formData.email"
 									type="email"
 									id="email"
 									name="email"
@@ -38,6 +81,7 @@ export default {
 						<div>
 							<label for="message" class="block text-sm font-medium text-gray-700">Message</label>
 							<textarea
+								v-model="formData.message"
 								id="message"
 								name="message"
 								rows="4"
@@ -50,11 +94,20 @@ export default {
 							Send Message
 						</button>
 					</form>
+
+					<!-- Success and Error Messages -->
+					<div v-if="successMessage" class="mt-4 text-sm text-green-500">
+						{{ successMessage }}
+					</div>
+					<div v-if="errorMessage" class="mt-4 text-sm text-red-500">
+						{{ errorMessage }}
+					</div>
 				</div>
+
 				<!-- Image Section -->
 				<div class="hidden lg:flex justify-center">
 					<img
-						src="../img/437578654_1111244393479241_8760341249854986468_n.jpg"
+						src="/src/img/437578654_1111244393479241_8760341249854986468_n.jpg"
 						alt="Mark Anthony Sol Cruz"
 						class="w-full max-w-md rounded-lg shadow-lg" />
 				</div>
