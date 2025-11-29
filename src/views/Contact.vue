@@ -1,4 +1,6 @@
 <script>
+import emailjs from '@emailjs/browser';
+
 export default {
 	name: "Contact",
 	data() {
@@ -23,15 +25,26 @@ export default {
 			}
 
 			try {
-				// Replace this with your actual API or backend logic
-				console.log("Form Data Submitted:", this.formData);
+				const templateParams = { // Define template parameters
+					from_name: this.formData.name,
+					message: this.formData.message,
+					from_email: this.formData.email,
+				};
 
-				// Simulate successful submission
-				this.successMessage = "Thank you for your message! I'll get back to you soon.";
+				await emailjs.send(
+					"service_c789pic", // Replace with your EmailJS service ID
+					"template_tj4dfue", // Replace with your EmailJS template ID
+					templateParams,
+					"w-7of9uCJC897i8P-" // Replace with your EmailJS user ID
+				);
+
+				this.successMessage = "Message sent successfully!";
 				this.errorMessage = "";
 				this.resetForm();
+
 			} catch (error) {
 				console.error("Error submitting the form:", error);
+				console.log()
 				this.successMessage = "";
 				this.errorMessage = "Something went wrong. Please try again later.";
 			}
@@ -56,7 +69,7 @@ export default {
 				<!-- Contact Form -->
 				<div>
 					<form @submit="handleSubmit" class="space-y-6">
-						<div class="grid grid-cols-1 gap-6 sm:grid-cols-2">
+						<div class="grid grid-cols-1 gap-6">
 							<div>
 								<label for="name" class="block text-sm font-medium text-gray-700">Name</label>
 								<input

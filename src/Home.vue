@@ -1,19 +1,9 @@
-<template>
-	<div>
-		<Hero />
-		<About />
-		<Projects />
-		<Skills />
-		<Contact />
-	</div>
-</template>
-
 <script>
-import Hero from "./views/Hero.vue";
-import About from "./views/About.vue";
-import Projects from "./views/Projects.vue";
-import Skills from "./views/Skills.vue";
-import Contact from "./views/Contact.vue";
+import Hero from "@/views/Hero.vue";
+import About from "@/views/About.vue";
+import Projects from "@/views/Projects.vue";
+import Skills from "@/views/Skills.vue";
+import Contact from "@/views/Contact.vue";
 
 export default {
 	components: {
@@ -33,5 +23,15 @@ export default {
 	},
 };
 </script>
+
+<template>
+	<div>
+		<Hero />
+		<About />
+		<Projects />
+		<Skills />
+		<Contact />
+	</div>
+</template>
 
 <style scoped></style>
