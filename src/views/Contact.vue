@@ -25,17 +25,36 @@ export default {
 			}
 
 			try {
+
+				const time = new Date().toLocaleTimeString("en-US", {
+					hour: "2-digit",
+					minute: "2-digit",
+				});
+				// send to my email using emailjs
 				const templateParams = { // Define template parameters
 					from_name: this.formData.name,
 					message: this.formData.message,
 					from_email: this.formData.email,
+					time: time,
 				};
-
 				await emailjs.send(
-					"service_c789pic", // Replace with your EmailJS service ID
-					"template_tj4dfue", // Replace with your EmailJS template ID
+					"service_c789pic", // Use your EmailJS service ID
+					"template_bjv0yde", // Use your EmailJS template ID
 					templateParams,
-					"w-7of9uCJC897i8P-" // Replace with your EmailJS user ID
+					"w-7of9uCJC897i8P-" // Use your EmailJS user/public key
+				);
+
+				//send to person who filled the form
+				const templateParams2 = {
+					email: this.formData.email,
+					name: this.formData.name,
+					message: this.formData.message,
+				};
+				await emailjs.send(
+					"service_c789pic",
+					"template_tj4dfue",
+					templateParams2,
+					"w-7of9uCJC897i8P-"
 				);
 
 				this.successMessage = "Message sent successfully!";
@@ -44,7 +63,7 @@ export default {
 
 			} catch (error) {
 				console.error("Error submitting the form:", error);
-				console.log()
+				console.log();
 				this.successMessage = "";
 				this.errorMessage = "Something went wrong. Please try again later.";
 			}
@@ -72,37 +91,21 @@ export default {
 						<div class="grid grid-cols-1 gap-6">
 							<div>
 								<label for="name" class="block text-sm font-medium text-gray-700">Name</label>
-								<input
-									v-model="formData.name"
-									type="text"
-									id="name"
-									name="name"
-									required
+								<input v-model="formData.name" type="text" id="name" name="name" required
 									class="mt-1 block w-full rounded-lg border-secondary shadow-sm focus:ring-primary focus:border-primary sm:text-sm" />
 							</div>
 							<div>
 								<label for="email" class="block text-sm font-medium text-gray-700">Email</label>
-								<input
-									v-model="formData.email"
-									type="email"
-									id="email"
-									name="email"
-									required
+								<input v-model="formData.email" type="email" id="email" name="email" required
 									class="mt-1 block w-full rounded-lg border-secondary shadow-sm focus:ring-primary focus:border-primary sm:text-sm" />
 							</div>
 						</div>
 						<div>
 							<label for="message" class="block text-sm font-medium text-gray-700">Message</label>
-							<textarea
-								v-model="formData.message"
-								id="message"
-								name="message"
-								rows="4"
-								required
+							<textarea v-model="formData.message" id="message" name="message" rows="4" required
 								class="mt-1 block w-full rounded-lg border-secondary shadow-sm focus:ring-primary focus:border-primary sm:text-sm"></textarea>
 						</div>
-						<button
-							type="submit"
+						<button type="submit"
 							class="send-message-button w-full rounded-lg bg-primary px-4 py-2 text-white text-sm font-semibold hover:bg-secondary focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary">
 							Send Message
 						</button>
@@ -119,9 +122,7 @@ export default {
 
 				<!-- Image Section -->
 				<div class="hidden lg:flex justify-center">
-					<img
-						src="/src/img/437578654_1111244393479241_8760341249854986468_n.jpg"
-						alt="Mark Anthony Sol Cruz"
+					<img src="/src/img/437578654_1111244393479241_8760341249854986468_n.jpg" alt="Mark Anthony Sol Cruz"
 						class="w-full max-w-md rounded-lg shadow-lg" />
 				</div>
 			</div>
@@ -133,6 +134,7 @@ export default {
 .send-message-button {
 	@apply bg-primary hover:bg-secondary focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary;
 }
+
 input,
 textarea {
 	@apply border-secondary shadow-sm focus:ring-primary focus:border-primary;
