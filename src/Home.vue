@@ -13,8 +13,10 @@ export default {
 		Skills,
 		Contact,
 	},
-	data() {
-		// some data
+	data() {	
+		return {
+			// title: '',
+		};
 	},
 	methods: {
 		// resetTitle() {

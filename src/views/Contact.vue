@@ -5,6 +5,9 @@ export default {
 	name: "Contact",
 	data() {
 		return {
+			rateLimitSeconds: 30,
+			lastSentTime: null,
+			cooldownMessage: "",
 			formData: {
 				name: "",
 				email: "",
@@ -17,6 +20,15 @@ export default {
 	methods: {
 		async handleSubmit(event) {
 			event.preventDefault();
+
+			const now = Date.now();
+
+			// Check rate limit
+			if (this.lastSentTime && now - this.lastSentTime < this.rateLimitSeconds * 1000) {
+				const remaining = Math.ceil((this.rateLimitSeconds * 1000 - (now - this.lastSentTime)) / 1000);
+				this.cooldownMessage = `Please wait ${remaining}s before sending another message.`;
+				return;
+			}
 
 			// Basic form validation
 			if (!this.formData.name || !this.formData.email || !this.formData.message) {
@@ -59,11 +71,13 @@ export default {
 
 				this.successMessage = "Message sent successfully!";
 				this.errorMessage = "";
+				this.cooldownMessage = "";
+
+				this.lastSentTime = now;
 				this.resetForm();
 
 			} catch (error) {
 				console.error("Error submitting the form:", error);
-				console.log();
 				this.successMessage = "";
 				this.errorMessage = "Something went wrong. Please try again later.";
 			}
@@ -114,6 +128,9 @@ export default {
 					<!-- Success and Error Messages -->
 					<div v-if="successMessage" class="mt-4 text-sm text-green-500">
 						{{ successMessage }}
+					</div>
+					<div v-if="cooldownMessage" class="mt-4 text-sm text-yellow-600">
+						{{ cooldownMessage }}
 					</div>
 					<div v-if="errorMessage" class="mt-4 text-sm text-red-500">
 						{{ errorMessage }}
